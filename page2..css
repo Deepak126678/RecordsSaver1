@@ -1,0 +1,210 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#main-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#userList {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#userList h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.name-item {
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 20px;
+    background-color: #eaf4ff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.name-item:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+#addUserBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#logout {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#Delete {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#Delete:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+#logout:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+#addUserBtn:hover {
+    background-color: cyan;
+    transform: scale(1.05);
+}
+#im1{
+    min-height: 200px;
+    min-width: 200px;
+    position:absolute;
+    top:10px;
+    left:5px;
+    object-fit: cover;
+    background-color: white;
+ 
+}
+
+
+#userDetails {
+    flex: 2;
+    padding: 20px;
+    background: grey;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    
+    min-height: 150px;
+    color: white;
+    background-color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+
+#addUserModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-image: url(background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContent {
+    background: cyan;
+    padding: 20px;
+    border-radius: 8px;
+   
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#modalContent h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#modalContent label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+#modalContent input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#modalContent button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#modalContent button:hover {
+    background-color: #0056b3;
+}
+
+#cancelBtn {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+#cancelBtn:hover {
+    background-color: #c82333;
+}
+h3{
+    background-color: black;
+    color:white;
+}
